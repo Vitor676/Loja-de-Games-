@@ -1,10 +1,12 @@
 ﻿using FluentValidation;
 using lojadotorviz.Model;
 using lojadotorviz.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace lojadotorviz.Controller
 {
+    [Authorize]
     [Route("~/categorias")]
     [ApiController]
     public class CategoriaController : ControllerBase
